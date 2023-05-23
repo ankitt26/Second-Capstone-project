@@ -16,8 +16,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   font-family: "Nunito", sans-serif;
-
-  /* font-family: "Ysabeau", sans-serif; */
   font-size: 20px;
   align-items: center;
   width: 700px;
@@ -31,6 +29,16 @@ nav {
 
 .nav-a {
   text-decoration: none;
+  color: rgb(21, 118, 198);
+}
+
+.nav-a:hover {
+  color: rgb(194, 192, 192);
+}
+
+.active {
+  color: rgb(232, 41, 41);
+  border-bottom: 3px solid rgb(230, 33, 33);
 }
 
 .copyright {
@@ -105,6 +113,14 @@ h3 {
 .like-icon {
   color: red;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.like-icon:hover {
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #f76969;
 }
 
 .comment-btn {
@@ -113,5 +129,14 @@ h3 {
   border: none;
   border-radius: 10px;
   background-color: azure;
-  margin: 4px 1px 6px;
+  margin: 4px 1px 8px;
+  cursor: pointer;
+}
+
+.comment-btn:hover,
+.comment-btn:focus {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  background-color: rgb(215, 255, 242);
 }
