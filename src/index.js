@@ -12,3 +12,25 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+const getData = async () => {
+  const result = await fetch('https://api.tvmaze.com/shows');
+  const data = await result.json();
+  return data;
+};
+const movies = document.getElementById('movie-data');
+const displaydata = async () => {
+  const data = await getData();
+  data.forEach((data, i) => {
+    movies.innerHTML += `
+    <div class='images'>
+    <img class='film' src=${data.image.medium}>
+    <p class='film-name'>${data.name}</p>
+    <div class="likes-comment">
+    <button class="likebtn" data-index="${i}">Like</button>
+    <button class="commentbtn" data-index="${i}">comment</button>
+    </div>
+    </div>`;
+  });
+};
+displaydata();
