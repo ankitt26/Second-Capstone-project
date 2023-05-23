@@ -1,14 +1,14 @@
-const mainSection = document.querySelector(".main-section");
+const mainSection = document.querySelector('.main-section');
 export default (data) => {
-  for (let i = 0; i < 12; i++) {
-    mainSection.innerHTML += `<div class="card" id="${data[i].id}">
+  data.forEach((data) => {
+    mainSection.innerHTML += `<div class="card" id="${data.id}">
 <img
   class="card-img"
-  src=${data[i].image.original}
-  alt="${data[i].name}"
+  src=${data.image.original}
+  alt="${data.name}"
 />
 <div class="detail">
-  <h3>${data[i].name}</h3>
+  <h3>${data.name}</h3>
   <div class="likes">
     <i class="fa-solid fa-heart like-icon"></i>
     <span class="count-like">2 likes</span>
@@ -16,5 +16,5 @@ export default (data) => {
 </div>
 <button class="comment-btn">comments</button>
 </div>`;
-  }
+  });
 };
