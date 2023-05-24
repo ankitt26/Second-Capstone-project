@@ -11,7 +11,7 @@ export default (data) => {
   <h3>${data.name}</h3>
   <div class="likes">
     <i class="fa-solid fa-heart like-icon"></i>
-    <span class="count-like">2 likes</span>
+    <span class="count-like">0 likes</span>
   </div>
 </div>
 <button class="comment-btn" id="card${data.id}" >comments</button>
