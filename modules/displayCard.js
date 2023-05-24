@@ -14,7 +14,7 @@ export default (data) => {
     <span class="count-like">2 likes</span>
   </div>
 </div>
-<button class="comment-btn">comments</button>
+<button class="comment-btn" id="card${data.id}" >comments</button>
 </div>`;
   });
 };
