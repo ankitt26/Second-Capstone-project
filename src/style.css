@@ -16,8 +16,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   font-family: "Nunito", sans-serif;
-
-  /* font-family: "Ysabeau", sans-serif; */
   font-size: 20px;
   align-items: center;
   width: 700px;
@@ -31,16 +29,113 @@ nav {
 
 .nav-a {
   text-decoration: none;
+  color: rgb(21, 118, 198);
+}
+
+.nav-a:hover {
+  color: rgb(194, 192, 192);
+}
+
+.active {
+  color: rgb(232, 41, 41);
+  border-bottom: 3px solid rgb(230, 33, 33);
 }
 
 .copyright {
-  width: 100%;
   font-size: 18px;
   font-family: "Ysabeau", sans-serif;
   margin: 2px 0;
   padding: 5px 0 4px 60px;
   color: rgb(171, 163, 163);
-  border: 3px solid yellow;
-  position: fixed;
-  bottom: 0;
+  border: 3px solid rgb(231, 231, 178);
+}
+
+/* home page css */
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 100px;
+}
+
+.card {
+  width: 280px;
+  height: auto;
+  font-family: "Ysabeau", sans-serif;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(127, 123, 123);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.card-img {
+  width: 250px;
+  height: 333px;
+  border-radius: 10px;
+  margin-top: 13px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 95%;
+}
+
+h3 {
+  color: rgb(24, 43, 37);
+  color: #4a4545;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #4a4545;
+}
+
+.count-like {
+  font-size: 15px;
+}
+
+.like-icon {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.like-icon:hover {
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #f76969;
+}
+
+.comment-btn {
+  width: 70%;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: azure;
+  margin: 4px 1px 8px;
+  cursor: pointer;
+}
+
+.comment-btn:hover,
+.comment-btn:focus {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  background-color: rgb(215, 255, 242);
 }
