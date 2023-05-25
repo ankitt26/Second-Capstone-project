@@ -1,4 +1,5 @@
-import addComment from './addcomment';
+import addComment from './addcomment.js';
+import displayComments from './displaycomment.js';
 
 export default async (data) => {
   const mainSection = document.querySelector('.main-section');
@@ -39,7 +40,9 @@ export default async (data) => {
         await addComment(selected.id, user.value, comment.value);
         user.value = '';
         comment.value = '';
+        displayComments(selected.id);
       });
+      displayComments(selected.id);
       const closeButton = document.getElementById('close-btn');
       const commentpopup = document.getElementById('comment-popup');
       commentpopup.classList.add('show');
