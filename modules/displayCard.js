@@ -1,6 +1,6 @@
 const mainSection = document.querySelector('.main-section');
 export default (data) => {
-  data.forEach((data) => {
+  data.forEach((data, index) => {
     mainSection.innerHTML += `<div class="card" id="${data.id}">
 <img
   class="card-img"
@@ -14,7 +14,7 @@ export default (data) => {
     <span class="count-like" id="item${data.id}">0 likes</span>
   </div>
 </div>
-<button class="comment-btn" id="card${data.id}" >comments</button>
+<button class="comment-btn" data-index="${index}" >comments</button>
 </div>`;
   });
 };
