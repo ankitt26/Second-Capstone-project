@@ -37,8 +37,8 @@ nav {
 }
 
 .active {
-  color: rgb(232, 41, 41);
-  border-bottom: 3px solid rgb(230, 33, 33);
+  color: rgb(225, 104, 104);
+  border-bottom: 2.5px solid #b58989;
 }
 
 .copyright {
@@ -140,7 +140,12 @@ h3 {
   background-color: rgb(215, 255, 242);
 }
 
-/*  comment popup */
+#movies {
+  font-size: 15px;
+}
+
+/* .............................Pop up comment........................... */
+
 form > input,
 textarea {
   outline: none;
