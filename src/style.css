@@ -266,3 +266,40 @@ form {
   font-family: cursive;
   font-size: 24px;
 }
+
+.comment-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 10px;
+  list-style-type: none; /* Add this line to remove bullet points */
+}
+
+.comment {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-date {
+  font-weight: bold;
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #555;
+}
+
+.comment-username {
+  font-weight: bold;
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #333;
+}
+
+.comment-text {
+  margin-top: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  color: #777;
+}
