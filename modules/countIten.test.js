@@ -1,7 +1,7 @@
-import countItem from "./countItem.js";
+import countItem from './countItem.js';
 
-describe("test count items", () => {
-  test("test 1", () => {
+describe('test count items', () => {
+  test('test 1', () => {
     document.body.innerHTML = `
     <li class="nav-li">
           <a href="#" class="nav-a active">Movies <span id="movies"></span></a>
@@ -12,13 +12,13 @@ describe("test count items", () => {
         <div class="card"> </div>
         </main>
     `;
-    const movieC = document.getElementById("movies");
+    const movieC = document.getElementById('movies');
     countItem();
 
-    expect(movieC.innerHTML).toBe(" (3)");
+    expect(movieC.innerHTML).toBe(' (3)');
   });
 
-  test("test 2", () => {
+  test('test 2', () => {
     document.body.innerHTML = `
     <li class="nav-li">
           <a href="#" class="nav-a active">Movies <span id="movies"></span></a>
@@ -31,9 +31,9 @@ describe("test count items", () => {
         <div class="card"> </div>
         </main>
     `;
-    const movieC = document.getElementById("movies");
+    const movieC = document.getElementById('movies');
     countItem();
 
-    expect(movieC.innerHTML).toBe(" (5)");
+    expect(movieC.innerHTML).toBe(' (5)');
   });
 });

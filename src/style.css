@@ -92,7 +92,7 @@ nav {
 
 h3 {
   color: rgb(24, 43, 37);
-  color: #4a4545;
+  font-family: "Ysabeau", sans-serif;
   max-width: 70%;
   word-wrap: break-word;
 }
@@ -149,6 +149,7 @@ h3 {
 form > input,
 textarea {
   outline: none;
+  background-color: #f1f1f1;
   border: 2px solid hsla(260, 11%, 85%, 1);
   border-radius: 4px;
   padding: 5px;
@@ -158,11 +159,12 @@ textarea {
   display: none;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
-  margin: 4em;
-  border: 1px solid lightgray;
-  height: 76vh;
+  margin: 3em auto;
+  border: 5px solid lightgray;
+  width: 83%;
+  height: 85vh;
   top: 0;
   position: fixed;
   bottom: 0;
@@ -177,12 +179,19 @@ textarea {
   display: flex;
 }
 
+.pop-img {
+  width: 250px;
+  height: 333px;
+  border: 2px solid rgb(141, 138, 131);
+  border-radius: 5px;
+}
+
 #comment-list {
   display: flex;
   flex-direction: column;
   width: 55%;
   padding: 10px;
-  border: 1px solid lightgray;
+  font-family: "Ysabeau", sans-serif;
   border-radius: 5px;
 }
 
@@ -205,13 +214,13 @@ textarea {
 }
 
 #close-btn {
-  position: fixed;
-  right: 0;
-  margin-right: 4em;
+  color: #4a4545;
+  position: absolute;
+  right: 15px;
+  top: 15px;
   background: none;
-  font-size: x-large;
+  font-size: 40px;
   border: none;
-  top: 80px;
 }
 
 .comment-show {
@@ -229,13 +238,14 @@ textarea {
 }
 
 #input-form input {
+  background-color: #f1f1f1;
   margin-bottom: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 55%;
 }
 
 #submit {
@@ -255,10 +265,11 @@ form {
   font-size: 12px;
   font-family: cursive;
   font-weight: 900;
-  color: lightseagreen;
+  color: rgb(75, 82, 81);
 }
 
 .summary-text {
+  max-width: 850px;
   margin: 2px;
   font-size: 12px;
   font-family: cursive;
@@ -280,6 +291,7 @@ form {
 
 .comment-item {
   background-color: #f1f1f1;
+  border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
   list-style-type: none; /* Add this line to remove bullet points */

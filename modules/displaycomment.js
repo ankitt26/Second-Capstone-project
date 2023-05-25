@@ -7,22 +7,19 @@ const getComments = async (id) => {
       },
     });
     const data = await response.json();
-    console.log('Data from API:', data);
     return data;
   } catch (error) {
-    console.error('Error fetching reservations:', error);
     return null;
   }
 };
 
 const displayComments = async (id) => {
   const data = await getComments(id);
-  console.log('data from getComments:', data);
   const scoreboard = document.getElementById('comment-list');
   scoreboard.innerHTML = '';
   scoreboard.classList.add('comment-list'); // Add class for comment list
   const header = document.createElement('h3');
-  header.textContent = `Comments${data.length ? `(${data.length})` : ''}`;
+  header.textContent = `Comments ${data.length ? `(${data.length})` : ''}`;
   scoreboard.appendChild(header);
   if (!data.error) {
     data.forEach((comm) => {

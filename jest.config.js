@@ -1,5 +1,4 @@
 module.exports = {
-    // other Jest configurations...
-    testEnvironment: 'jsdom',
-  };
-  
+  // other Jest configurations...
+  testEnvironment: 'jsdom',
+};
