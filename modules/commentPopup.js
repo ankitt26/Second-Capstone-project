@@ -1,3 +1,5 @@
+import addComment from './addcomment';
+
 export default async (data) => {
   const mainSection = document.querySelector('.main-section');
   mainSection.addEventListener('click', async (event) => {
@@ -28,6 +30,16 @@ export default async (data) => {
         </form>
       </div>
     `;
+      const user = document.getElementById('user');
+      const comment = document.getElementById('comment');
+      const commentbtn = document.querySelector('#comment-info .submit');
+      commentbtn.dataset.index = selected.id;
+      commentbtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        await addComment(selected.id, user.value, comment.value);
+        user.value = '';
+        comment.value = '';
+      });
       const closeButton = document.getElementById('close-btn');
       const commentpopup = document.getElementById('comment-popup');
       commentpopup.classList.add('show');
