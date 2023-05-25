@@ -1,6 +1,7 @@
-const item = document.querySelector('.main-section');
-const movieC = document.getElementById('movies');
 export default () => {
-  const itemsCount = item.childNodes.length;
-  movieC.innerHTML += ` (${itemsCount})`;
+  const movieC = document.getElementById("movies");
+  const item = document.querySelectorAll(".card");
+  
+  const itemsCount = item.length;
+  movieC.innerHTML = ` (${itemsCount})`;
 };
