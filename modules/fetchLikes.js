@@ -1,6 +1,6 @@
 import displayLike from './displayLike.js';
 
-const appId = 'EzcPmGAtZ0RFezt2A6le';
+const appId = 'rtnq9Qf95LeYRJqVUQcC';
 export default async () => {
   await fetch(
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/likes/`,

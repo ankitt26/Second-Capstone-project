@@ -1,5 +1,4 @@
 import displayCard from './displayCard.js';
-import fetchLikes from './fetchLikes.js';
 
 const API = 'https://api.tvmaze.com/shows';
 
@@ -10,5 +9,4 @@ export default async () => {
     .then((data) => {
       displayCard(data);
     });
-  fetchLikes();
 };
