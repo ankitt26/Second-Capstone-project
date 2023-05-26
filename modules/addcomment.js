@@ -1,5 +1,5 @@
 const addComment = async (id, username, comment) => {
-  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/pBIYWv6nEx7bPsY1jHDg/comments', {
+  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rtnq9Qf95LeYRJqVUQcC/comments', {
     method: 'POST',
     body: JSON.stringify({
       item_id: id,

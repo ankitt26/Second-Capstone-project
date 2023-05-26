@@ -1,6 +1,6 @@
 const getComments = async (id) => {
   try {
-    const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/pBIYWv6nEx7bPsY1jHDg/comments?item_id=${id}`, {
+    const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/rtnq9Qf95LeYRJqVUQcC/comments?item_id=${id}`, {
       method: 'GET',
       headers: {
         'content-type': 'application/json',
