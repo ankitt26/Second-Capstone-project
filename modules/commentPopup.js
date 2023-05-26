@@ -36,14 +36,13 @@ export default async (data) => {
       const commentbtn = document.querySelector('#comment-info .submit');
       commentbtn.dataset.index = selected.id;
       commentbtn.addEventListener('click', async (e) => {
-        if(user.value !== "" && comment.value !==""){
-            e.preventDefault();
-        await addComment(selected.id, user.value, comment.value);
-        user.value = '';
-        comment.value = '';
-        displayComments(selected.id);
+        if (user.value !== '' && comment.value !== '') {
+          e.preventDefault();
+          await addComment(selected.id, user.value, comment.value);
+          user.value = '';
+          comment.value = '';
+          displayComments(selected.id);
         }
-      
       });
       displayComments(selected.id);
       const closeButton = document.getElementById('close-btn');
