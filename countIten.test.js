@@ -1,4 +1,4 @@
-import countItem from './countItem.js';
+import countItem from './modules/countItem.js';
 
 describe('test count items', () => {
   test('test 1', () => {
