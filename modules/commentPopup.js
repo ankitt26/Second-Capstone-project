@@ -21,7 +21,7 @@ export default async (data) => {
         <br>
         <p class="sum">SUMMARY:</p>
         <div class="summary-text">${selected.summary}</div>
-        <button id="close-btn">x</button>
+        <button id="close-btn">×</button>
         <ul id="comment-list"></ul>
         <form class="form" id='input-form'>
           <h3>Add a comment</h3>

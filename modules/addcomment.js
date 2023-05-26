@@ -10,7 +10,6 @@ const addComment = async (id, username, comment) => {
       'Content-Type': 'application/json',
     },
   });
-  console.log('response from API', response);
   return response;
 };
 export default addComment;
