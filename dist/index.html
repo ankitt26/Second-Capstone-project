@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tv Shows and Movies</title>
+    <title>NextView</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -22,7 +22,9 @@
               class="logo"
               src="https://static.vecteezy.com/system/resources/previews/008/040/410/original/school-logo-design-template-free-vector.jpg"
               alt="logo"
-          /></a>
+            />
+            <span class="nextview">NextView</span>
+          </a>
         </li>
         <li class="nav-li">
           <a href="#" class="nav-a active">Movies <span id="movies"></span></a>
@@ -34,6 +36,9 @@
 
     <!-- main section -->
     <main class="main-section">
+      <span>
+        <i class="fa-solid fa-spinner Loading" id="Loading"></i>
+      </span>
       <!-- cards willbe render dynamically using fetch with Api -->
     </main>
 

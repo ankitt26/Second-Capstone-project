@@ -1,5 +1,6 @@
 const mainSection = document.querySelector('.main-section');
 export default (data) => {
+  mainSection.innerHTML = '';
   data.forEach((data, index) => {
     mainSection.innerHTML += `<div class="card" id="${data.id}">
 <img

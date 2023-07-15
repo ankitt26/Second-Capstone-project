@@ -330,3 +330,25 @@ form {
   font-size: 12px; /* Adjust the font size as needed */
   color: #777;
 }
+
+#Loading {
+  transition: transform 1s ease;
+  font-size: 100px;
+  margin-top: 50%;
+  color: rgb(166, 191, 228);
+  margin-bottom: 800px;
+}
+
+.Loading {
+  animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
