@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Ysabeau:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Ysabeau:wght@300&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Ysabeau:wght@300;600;800&display=swap");
 
 body {
   margin: 0;
@@ -25,6 +26,15 @@ nav {
 
 .logo {
   width: 70px;
+}
+
+.nextview {
+  position: relative;
+  bottom: 22px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  color: rgb(0 102 185);
+  font-size: 25px;
 }
 
 .nav-a {
